@@ -16,7 +16,7 @@ import App from './components/App';
 import './index.css';
 import i18n from './locales';
 import configureStore from './configureStore';
-import { muiTheme } from './modules/theme';
+import { muiTheme } from './theme';
 
 const v1Theme = () => createMuiTheme({ ...dhis2theme });
 
@@ -46,7 +46,7 @@ const init = () => {
         : DHIS_CONFIG.baseUrl;
 
     config.baseUrl = `${baseUrl}/api/${manifest.dhis2.apiVersion}`;
-    config.schemas = ['dashboard', 'organisationUnit'];
+    config.schemas = ['chart', 'map', 'dashboard', 'organisationUnit'];
     config.headers = isProd
         ? null
         : { Authorization: DHIS_CONFIG.authorization };

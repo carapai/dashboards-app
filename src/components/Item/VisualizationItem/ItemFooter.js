@@ -31,19 +31,10 @@ const style = {
     },
 };
 
-const ItemDescription = ({ description }) => {
-    return (
-        <div style={style.descriptionContainer}>
-            <h3 style={style.descriptionTitle}>Description</h3>
-            <p style={style.descriptionText}>{description}</p>
-        </div>
-    );
-};
-
 class ItemFooter extends Component {
     render() {
         const objectId = getId(this.props.item);
-        
+
         return (
             <div className="dashboard-item-footer">
                 <hr style={style.line} />

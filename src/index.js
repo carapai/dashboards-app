@@ -16,7 +16,7 @@ import App from './components/App';
 import './index.css';
 import i18n from './locales';
 import configureStore from './configureStore';
-import { muiTheme } from './modules/theme';
+import { muiTheme } from './theme';
 
 const v1Theme = () => createMuiTheme({ ...dhis2theme });
 

@@ -1,14 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-<<<<<<< HEAD
 import InterpretationsComponent from '@dhis2/d2-ui-interpretations';
 import { colors } from '../../../modules/colors';
 import { getId } from './plugin';
-=======
-import { colors } from '../../../colors';
-import { getId } from './plugin';
-import InterpretationsComponent from '@dhis2/d2-ui-interpretations';
->>>>>>> 9b08e97e7e7b53a1fac32f2efc17038bf1c8ac68
 
 const style = {
     scrollContainer: {
